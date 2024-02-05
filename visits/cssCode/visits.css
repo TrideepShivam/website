@@ -1,0 +1,60 @@
+#maindiv{
+	width:100%;
+	height:100%;
+	position:relative;
+	background-size:cover;
+	background-attachment:fixed;
+}
+#mainText{
+	width:100%;
+	height:100%;
+	color:white;
+	background:rgba(0,0,0,.5);
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+#mainText h1{
+	background-image: linear-gradient(60deg, rgb(0,255,50), rgb(0,255,200));
+	font-size: 60px;
+	-webkit-background-clip: text;
+	color: transparent;
+	margin:0;
+}
+#cityDetails{
+	background:rgb(30,30,50);
+	width:100%;
+	height:auto;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+}
+#cityDetails img{
+	width:40%;
+	height:auto;
+	margin:5%;
+	box-shadow:0 0 10px black;
+}
+#text{
+	width:40%;
+	height:auto;
+	margin:5%;
+	text-wrap:wrap;
+	color:white;
+	line-height:22px;
+}
+#text h1{
+	color:rgb(18,250,62);
+	text-shadow:0 0 10px rgb(18,250,62);
+}
+#text p b{color:rgb(0,255,255);}
+
+@media screen and (max-width:400px){
+			#cityDetails{
+				flex-direction:column;
+			}
+			#cityDetails img, #text{width:90%;font-size:12px;}
+			#maintext h1{font-size:45px;}
+		}

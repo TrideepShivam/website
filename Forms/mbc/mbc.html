@@ -1,0 +1,186 @@
+<!DOCKTYPE html> 
+<html>
+<head>	
+    <link rel="icon" type="../../image/ico" href="pictures/logo.png" />
+    <title>Madhepura Badminton DOUBLES Championship 2022</title>
+	<script src="../../jsCode/jquery.js"></script>
+	<link rel="stylesheet" href="../../cssCode/mainStyle.css">
+	<link rel="stylesheet" href="css/mbc.css">
+	<link rel="stylesheet" href="css/helpBox.css">
+	<link rel="stylesheet" href="css/response.css">
+	<script src="../../jsCode/main.js"></script>
+	<script src="form.js"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+<a id="menu" title="Menu">&#9776;</a>
+<div id="topnav">
+	<a id="homeNav" href="../../home.trideepshivam.html" class="active">HOME</a>
+	<a id="aboutNav" href="#aboutcontainer" >ABOUT</a>
+	<div id="expandServices">
+		<a id="servicesNav" href="#services" >SERVICES &nbsp; &#9660;</a>
+		<div id="dropdownContent">
+			<a href="../../webDesignService.trideepshivam.html" >WEB-DESIGNING</a>
+			<a href="../../photoEditingService.trideepshivam.html" >PHOTO-EDITING</a>
+			<a href="../../videoEditingService.trideepshivam.html" >VIDEO-EDITING</a>
+			<a href="../../trainingService.trideepshivam.html" >TRAINING</a>		
+			<a href="#" >OTHER</a>		
+		</div>
+	</div>
+	<div id="expandVisits">
+		<a id="visitsNav" href="#visits" >VISITS &nbsp; &#9660;</a>
+		<div id="dropdownContent2">
+			<a href="../../delhi.trideepshivam.html" >DELHI</a>
+			<a href="../../kathmandu.trideepshivam.html" >KATHMANDU</a>
+			<a href="../../patna.trideepshivam.html" >PATNA</a>
+			<a href="../../nalanda.trideepshivam.html" >NALANDA</a>	
+			<a href="../../rajgir.trideepshivam.html" >RAJGIR</a>
+		</div>
+	</div>
+	<a id="gallaryNav" href="#gallary" >GALLARY</a>
+	<a id="contactsNav" href="#contacts" >CONTACTS</a>
+	<a id="closeNav">CLOSE</a>
+</div>
+
+
+
+<!-- code for form... -->
+
+
+<div id="helpBoxContainer">
+	<button class="btndemo" id="closeHelpBox" onclick="document.getElementById('helpBoxContainer').style.height='0%';">&#10006;</button>
+	<div id="onOffContainer">
+		<div class="helpBox">
+			<h1>Form Filling</h1><hr>
+			<p>1. Fill your and your partner's <b class="focus">Details</b>. Email is <b class="focus">Optional</b>.</p>
+			<img src="pictures/personalDetailForm.jpg">
+			<p>2. Choose <b class="focus">Payment Mode</b>.</p>
+			<img src="pictures/paymentMode.jpg">
+			<p>3. Read <b class="focus">Terms and Conditions</b> then click on <b class="focus">Submit</b>.</p>
+			<img src="pictures/tncAndSubmit.jpg">
+			<p>4. Get the <b class='focus'>Entry ID</b> and go for <b class='focus'>Next Steps</b> according to Your <b class='focus'></b>Payment Mode.</p>
+			<img src="pictures/id.jpg">	
+			<p>5. You will be identified in this <b class="focus">Tournament</b> through your <b class="focus">Entry Id</b>.</p>
+		</div>
+		<div class="helpBox">
+			<h1>Next Steps: </h1><hr>
+			<h2>Online:-</h2>
+			<p>1. Get your Generated <b class='focus'>Entry ID</b>.</p>
+			<p>2. Pay 250rs on <b class='focus'>trideepshivam.com@apl</b> or <b class='focus'>9546747447@apl</b> or through <b>QR code</b>.</p>
+			<img src="pictures/qr.jpg">
+			<p>3. Take <b class='focus'>Screenshot</b> of Successfull payment.</p>
+			<img src="pictures/transaction.jpg">
+			<p>4. Send <b class='focus'>Payment Screenshot</b> with <b class='focus'>Entry Id</b> to the Whatsapp number <b class='focus'>7992467543</b>.</p>
+			<img src="pictures/wa.jpg">
+			<hr>
+			
+			<h2>Offline:-</h2>
+			<p>1. After generating <b class='focus'>Entry ID</b> Contact any of the <b class='focus'>Managers</b> and hand over Your <b class='focus'>Fees</b>.</p>
+			<img src="pictures/managers.png">
+			<p>2. Otherwise Visit <b class='focus'>TARUN INDIA INSTITUTE</b>, <b>NORTH OF SNPM +2 SCHOOL, MADHEPURA, BIHAR, 852113</b> and deposit your <b class='focus'>Fees</b>.</p>
+			<img src="pictures/tii.png">
+			<hr>
+			<ul style="font-size:20px;">
+				<li>After <b class='focus'>Payment</b>, Get your <b class='focus'>Entry Ticket</b> on your Registered <b>Whatsapp number</b> on <b class='focus'>11/02/2022</b></li>
+				<li>For more Details please <b class='focus'>Contact us</b> on any <b>given number</b>.</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div id="introPicContainer">
+	<div id="starterContent">
+		<h1 id="organizingWhat">Madhepura Badminton Championship 2022</h1>
+		<p><b>Badminton Doubles Knockout</b> Event is happening on <b>12th and 13th feb</b> at <b>B. P. Mandal Stadium</b>, Madhepura. Organized By <b>Tarun India Institute</b> only for Madhepura region.</p>
+		<div id="btnContainer">
+			<a id="register" href="#form1">Get Entry Ticket</a>
+			<a id="help" onclick="openHelp()">Help</a>
+		</div>
+	</div>
+</div>
+<div id="formContainer">	
+	<div id="form1" class="form">
+		<h1>Player-detail</h1>
+		<input id="name" type="text" class="txt" placeholder="Full Name" required>
+		<input id="dob" type="number" placeholder="Birth Year" class="txt" required>
+		<input id="whatsapp" type="number" class="txt" placeholder="Whatsapp" required>
+		<input id="email" type="email" class="txt" placeholder="Email(optional)">
+		<div><hr></div>
+		<h1>Partner-detail</h1>
+		<input id="pname" type="text" class="txt" placeholder="Partner Name" required>
+		<input id="pdob" type="number" placeholder="Birth Year" class="txt" required>
+		<input id="pwhatsapp" type="number" class="txt" placeholder="Whatsapp" required>
+		<input id="pemail" type="email" class="txt" placeholder="Email(optional)">
+		<fieldset id="paymentMode" class="txt">
+			<legend class="focus">Payment Mode</legend>
+			<input id="onlineMode" name="mode" type="radio" value="Online" required>Online
+			<input id="offlineMode" name="mode"type="radio" value="Offline" required>Offline
+		</fieldset>
+		<div class="tc">
+			<p class="focus">Terms & Conditions</p>
+			<div class="TnC">
+				<ul>
+					<li>Collected Money is <b>Neither Refundable nor Exchangable for other Players</b>.</li>
+					<li>All players will carry their own <b>badminton racquet</b> and <b>shoes</b>.</li>
+					<li>Any player <b>without Racquet and shoes</b> will be <b>disqualified</b> from this event.</li>
+					<li>If your payment is <b>pending</b> till <b>one day before</b> of event starting date, the team will be <b>disqualified</b> from the event.</li>
+					<li>Date can be changed according to the <b>organiser directions</b>.</li>
+					<li>For any Queries Please contact us on <b>7654417227</b> or <b>7992467543</b> or <b>9122984949</b>.</li>
+				</ul>
+			</div>
+		</div>
+		<button class="btndemo" onclick="js()">Submit</button>		<!-- js() -->	
+	</div>
+	<div id="details">
+		<div class="card">
+			<h1><span style="font-size:80px;">250/</span>Team</h1>
+		</div>
+		<div class="card">
+			<h1>Date</h1><hr>
+			<p><b>12th February</b> and <b>13th February</b>.</p>
+			<p>Every <b>Semi-finalist</b> will be <b>AWARDED</b>.</p>
+		</div>
+		<div class="card">
+			<h1>Events</h1><hr>
+			<p>1. Men' <b>DOUBLES</b>.</p>
+			<p>2. Women' <b>DOUBLES</b>.</p>
+		</div>
+		<div class="card">
+			<h1>Location</h1><hr>
+			<p><b>B.N. Mandal Stadium, Madhepura</b>.</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div id="contacts">
+	<div class="connect">
+		<h1 class="contactHead">Contact</h1>
+		<a href="#" class="connectlink">7654417227</a>
+		<a href="#" class="connectlink">9122984949</a>
+		<a href="#" class="connectlink">7992467543</a>
+	</div>
+	<div id="team">
+		<h1 class="contactHead">Managers</h1>
+		<a href="#" class="connectlink">Manish Gupta</a>
+		<a href="#" class="connectlink">Gaurav Kumar</a>
+		<a href="#" class="connectlink">Trideep Shivam</a>
+	</div>
+	<div id="contact">
+		<h1 class="contactHead">Organiser</h1>
+		<div>
+			<p>TARUN INDIA INSTITUTE, NORTH OF SNPM +2 SCHOOL, MADHEPURA, BIHAR</p>
+			<p>852113</p>
+		</div>	
+	</div>
+	<div style="padding:5px;"><img src="pictures/qr.jpg"></div>
+</div>
+<div id="credit"><h3>Created and Managed By <a href="https://www.trideepshivam.com">trideepshivam.com</a></h3></div>
+</body>
+</html>

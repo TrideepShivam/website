@@ -1,0 +1,45 @@
+#responseDiv{
+	height:auto;
+	width:90%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	background-image:linear-gradient(rgba(0,0,0,.9),rgb(0,0,0));
+	color:white;
+	margin:5%;
+	padding:50px 0px;
+}
+#uid{
+	font-size:30px;
+	font-weight:bold;
+	border:1px solid green;
+	box-shadow:0 0 5px black inset,0 0 10px black inset,0 0 25px green inset;
+	padding:20px 40px;
+	background:rgb(18,250,62);
+	color:white;
+	border-radius:50px;
+	margin:0px 0px 20px 0px;
+	-webkit-box-reflect: below 2px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.2));
+	animation:anim2 3s;
+	animation-iteration-count:infinite;
+}
+@keyframes anim2{
+	0%{transform:scale(1);}
+	50%{transform:scale(1.1);}
+	100%{transform:scale(1);}
+}
+#nextStep{
+	border:none;
+	border-top:1px solid rgb(18,250,62);
+	width:400px;
+	text-align:left;	
+}
+#nextStep legend{text-align:center;}
+#nextStep ol li{margin-bottom:10px;}
+#helpFromResponse{cursor:hand;color:tomato;}
+
+@media screen and (max-width:600px){
+	#nextStep{width:90%;}
+}

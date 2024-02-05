@@ -1,0 +1,284 @@
+<!DOCKTYPE html> 
+<html>
+<head>	
+    <link rel="icon" type="image/ico" href="logo.png" />
+    <title>Learn WEB-DESIGNING, get Edited Photo/video and get your wesite.</title>
+	<script src="jsCode/jquery.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="cssCode/mainStyle.css">
+	<link rel="stylesheet" href="cssCode/homeStyle.css">
+	<script src="jsCode/home.js"></script>
+	<script src="jsCode/main.js"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<style>
+		#Starter{background-image:url('pictures/coding2.jpg');}
+		#aboutcontainer{background-image:url('pictures/smiley.jpg');}
+		#personalinformation{background-image:url('pictures/TEXTED.jpg');}
+		#services{background-image:url('pictures/backgrounds/service_background.jpg');}
+		#visits{background-image:url('pictures/backgrounds/visits_background 4.jpg');}
+		#gallary{background-image:url('pictures/gallaryBackground2.jpg');}
+		@media screen and (max-width:500px){
+		    *{background-size:100% 100%;}
+			#Starter{background-image:url('pictures/coding2-resp.jpg');}
+			#introduction{height:100%;width:100%;margin:0;background:rgba(0,0,0,.5)}
+			#aboutcontainer{background-image:url('pictures/smiley-resp.jpg');}
+			#personalinformation{background-image:url('pictures/backgrounds/background-resp6.jpg');}
+			#services{background-image:url('pictures/backgrounds/background-resp8.jpg');}
+			#visits{background-image:url('pictures/backgrounds/background-resp9.jpg');}
+			#gallary{background-image:url('pictures/gallaryBackground-resp.jpg');}
+			#aboutcontainer #about{margin:25% 0;}
+			#infomore{left:30%;}
+			.Head{font-size:20px;}
+		}
+	</style>
+</head>
+<body>
+<a id="menu" title="Menu">&#9776;</a>
+<div id="topnav">
+	<a id="homeNav" href="home.html" class="active">HOME</a>
+	<a id="aboutNav" href="#aboutcontainer" >ABOUT</a>
+	<div id="expandServices">
+		<a id="servicesNav" href="#services" >SERVICES &nbsp; &#9660;</a>
+		<div id="dropdownContent">
+			<a href="services/webDesign.html" >WEB-DESIGNING</a>
+			<a href="services/photoEditing.html" >PHOTO-EDITING</a>
+			<a href="services/videoEditing.html" >VIDEO-EDITING</a>
+			<a href="services/training.html" >TRAINING</a>		
+			<a href="#" >OTHER</a>		
+		</div>
+	</div>
+	<div id="expandVisits">
+		<a id="visitsNav" href="#visits" >VISITS &nbsp; &#9660;</a>
+		<div id="dropdownContent2">
+			<a href="visits/delhi.html" >DELHI</a>
+			<a href="visits/kathmandu.html" >KATHMANDU</a>
+			<a href="visits/patna.html" >PATNA</a>
+			<a href="visits/nalanda.html" >NALANDA</a>	
+			<a href="visits/rajgir.html" >RAJGIR</a>
+		</div>
+	</div>
+	<a id="gallaryNav" href="#gallary" >GALLARY</a>
+	<a id="contactsNav" href="#contacts" >CONTACTS</a>
+	<a id="closeNav">CLOSE</a>
+</div>
+<div id="roundedpic" style="background-image:url('pictures/logo.png');"></div>
+<div id="heading"><h1>trideepshivam.com</h1></div>
+<div id="Starter">
+  <div id="introduction">
+	<h2 id="myself">Myself</h2>
+	<h1 id="name">Trideep Shivam</h1>
+	
+	<fieldset id="showServices">
+		<legend class="focus">I Provide</legend>
+		<div id="showServiceContainer">	
+			<h2 class="typedText">Web-Designing</h2>
+			<h2 class="typedText">Web-Hosting</h2>
+			<h2 class="typedText">Video-Editing</h2>
+			<h2 class="typedText">Training</h2>
+		</div>
+	</fieldset>
+	
+	<button class="btnfamily" onclick="getResponseHTMLCode('contact')">Contact</button>
+	<a href="https://telegram.me/joinchat/N6xBssdkOao5NWNl" class="btnjoin"  style="text-decoration:none;"><span>Join</span></a>
+  </div>
+</div>
+
+
+
+
+<div id="personalAd">
+	<video loop autoplay muted src="videos\WD-desktop.mp4"></video>
+	<div id="offercontainer">
+		<a href="services/training.html" style="text-decoration:none;" class="btnfamily">Get Offer</a>
+		<button id="closeAds" class="btnfamily">Close</button>
+	</div>
+</div>
+
+
+<div id="aboutcontainer">
+  <div id="circle1" class="circle"></div>
+  <div id="circle2" class="circle"></div>
+  <div id="about">
+	<h1>About:</h1>
+	<p>I am a good <b>LEARNER</b> and 
+want to make an educated environment for 
+new age and to give a good <b>BUSINESS PERSON</b>
+and a successfull <b>ENTERPRENEUR</b> to my country.
+I will make my city as a <b>Coding city</b> where will
+ lie <b>INDIA's</b> best <b>CODERS</b> and <b>PROGRAMMERS</b>.
+	  </p>
+  </div>
+	
+</div>
+<div id="personalinformation">
+	<div id="info">
+		<h1>Personal Information:</h1>
+		<table cellpadding="10%">
+			<tr><th>NAME: </th><td>SHIVAM KUMAR</td></tr>
+			<tr><th>ADDRESS: </th><td>MADHEPURA, BIHAR</td></tr>
+			<tr><th>HOBBIES: </th><td>BADMINTON, SINGING, TRAVELLING, GAMING</td></tr>
+			<tr><th>LANGUAGE: </th><td>HINDI, ENGLISH</td></tr>
+			<tr><th>E-MAIL: </th><td>owner@trideepshivam.com</td></tr>
+			<tr><th>WEBSITE: </th><td>www.trideepshivam.com</td></tr>
+		</table>
+		<h1>Skills:</h1>
+			<table>
+				<tr><th><ul>
+					<li>WEB-DESIGNING</li>
+					<li>WEB/SOFTWARE-DEVELOPMENT</li>					
+					<li>PHOTO/AUDIO/VIDEO-EDITING</li>
+					<li>ENGLISH-TYPING</li>
+					<li>TRAINER</li>
+				</ul></th></tr>
+			</table>
+		<h1>Education and Qualifications:</h1>
+		<h3>MATRICULATION:</h3>
+		<table cellpadding="10%">
+			<tr><th>2015: </th><td> GOT 1ST DIVISION IN MATRICULATION WITH <b>71%</b> AGGREGRATE FROM <b>S.N.P.M SENIOR SECONDARY HIGH SCHOOL, MADHEPURA</b>.</td></tr>
+		</table>
+		<h3>INTERMEDIATE:</h3>
+		<table cellpadding="10%">
+			<tr><th>2017: </th><td> GOT 2ND DIVISION IN INTERMEDIATE WITH <b>57%</b> AGGREGRATE FROM <b>S.N.P.M SENIOR SECONDARY HIGH SCHOOL, MADHEPURA</b>.</td></tr>
+		</table>
+		<h3>GRADUATION(BCA):</h3>
+		<table cellpadding="10%">
+			<tr><th>2020:  </th><td> GOT 1ST DIVISION IN BACHLOR IN COMPUTER APPLICATION WITH <b>80%</b> AGGREGRATE FROM <b>T.P. COLLEGE, MADHEPURA</b>.</td></tr>
+		</table>
+		<h1>EXPERIENCES:</h1>
+		<table cellpadding="10%">
+			<tr><th>TEACHING: </th><td>TEACHING <b>COMPUTER FUNDAMENTAL</b> FROM <b>2018 - PRESENT</b> AND <b>WEB-DESIGNING</b> FROM <b>2021 - PRESENT</b>.</td></tr>
+		</table>
+	</div>
+	<button id="infomore" class="btnfamily">More</button>
+</div>
+<div id="services">
+	<div class="Head">
+		<h1>Services</h1>
+		<p>Choose any Service to know more and </p>
+		<p>Contact me to get your work done.</p>
+	</div>	
+	<div class="serviceCard" onclick="window.location.href='services/webDesign.html';">
+		<div class="glassmorphism"></div>
+		<h1>Web-designing</h1>
+		<p>Get your own website.</p>
+	</div>	
+	<div class="serviceCard" onclick="window.location.href='services/photoEditing.html';">		
+		<div class="glassmorphism"></div>
+		<h1>Photo-editing</h1>
+		<p>Get your Dreamed photo.</p>
+	</div>
+	<div class="serviceCard" onclick="window.location.href='services/videoEditing.html';">
+		<div class="glassmorphism"></div>
+		<h1>Video-editing</h1>
+		<p>Get your Edited video.</p>
+	</div>
+	<div class="serviceCard" onclick="window.location.href='services/training.html';">
+		<div class="glassmorphism"></div>
+		<h1>Training</h1>
+		<p>Learn WEB-DESIGNING, C/C++ and Computer Fundamentals with Me.</p>
+	</div>
+	<div class="serviceCard">
+		<div class="glassmorphism"></div>
+		<h1>Web-Hosting</h1>
+		<p>coming soon.</p>
+	</div>		
+</div>
+<div id="visits">
+	<div class="Head">
+		<h1>Visits</h1>
+		<p>Choose any Visited City to know more and </p>
+		<p>Take a chance to know me better.</p>
+	</div>
+	<div class="visitCard" onclick="window.location.href='visits/delhi.html';">
+		<div class="inner-visitCard">
+			<div class="visitCard-front" style="background-image:url('pictures/indiaGate.jpg');">
+				<div><h1>DELHI</h1></div>
+			</div>
+			<div class="visitCard-back">
+				<h1>DELHI</h1>
+				<p>The capital of <b>INDIA.</b></p>
+			</div>
+		</div>
+	</div>
+	<div class="visitCard" onclick="window.location.href='visits/kathmandu.html';">
+		<div class="inner-visitCard">
+			<div class="visitCard-front" style="background-image:url('pictures/kathmandu.jpg');">
+				<div><h1>KATHMANDU</h1></div>
+			</div>
+			<div class="visitCard-back">
+				<h1>KATHMANDU</h1>
+				<p>The capital of <b>NEPAL.</b></p>
+			</div>
+		</div>
+	</div>
+	<div class="visitCard" onclick="window.location.href='visits/patna.html';">
+		<div class="inner-visitCard">
+			<div class="visitCard-front" style="background-image:url('pictures/patna.jpg');">
+			
+				<div><h1>PATNA</h1></div></div>
+			<div class="visitCard-back">
+				<h1>PATNA</h1>
+				<p>The capital of <b>BIHAR</b> and historically known as <b>PATLIPUTRA.</b></p>
+			</div>
+		</div>
+	</div>
+	<div class="visitCard" onclick="window.location.href='visits/nalanda.html';">
+		<div class="inner-visitCard">
+			<div class="visitCard-front" style="background-image:url('pictures/nalanda.jpg');">
+				<div><h1>NALANDA</h1></div>
+			</div>
+			<div class="visitCard-back">
+				<h1>NALANDA</h1>
+				<p>The City of Bihar where lies Historic <b>NALANDA UNIVERSITY.</b></p>
+			</div>
+		</div>
+	</div>
+	<div class="visitCard" onclick="window.location.href='visits/rajgir.html';">
+		<div class="inner-visitCard">
+			<div class="visitCard-front" style="background-image:url('pictures/rajgeer.jpg');">
+				<div><h1>RAJGIR</h1></div>
+			</div>
+			<div class="visitCard-back">
+				<h1>RAJGIR</h1>
+				<p>The City of Bihar where lies INDIA'S 2ND and BIHAR'S 1ST <b>SKY BRIDGE.</b></p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="gallary">
+	<div id="gallaryContainer">
+		<h1>GALLARY</h1>
+		<p>Click below to show all the Pictures.</p>
+		<a href="gallary.trideepshivam.html" style="text-decoration:none;" class="btnfamily">Show All</a>
+	</div>
+</div>
+<div id="contacts">
+	<div class="connect">
+		<h1 class="contactHead">Connect</h1>
+		<a id="instagram" href="https://www.instagram.com/trideepshivam/" class="connectlink">@trideepshivam</a>
+		<a id="email" href="https://www.gmail.com" class="connectlink">owner@trideepshivam.com</a>
+		<a id="linkedin" href="https://www.linkedin.com/in/trideep-shivam-b320b1217" class="connectlink">Trideep Shivam</a>
+		<a id="fb" href="https://www.facebook.com/tarunindiainstitute" class="connectlink">@tarunindiainstitute</a>
+		<a id="yt" href="https://www.youtube.com/c/TarunIndiaInstitute" class="connectlink">Tarun India Institute</a>
+	</div>
+	<div id="team">
+		<h1 class="contactHead">My Team</h1>
+		<a class="connectlink">Nikita Kashyap</a>
+		<a class="connectlink">Shashwat Tejaswi</a>
+		<a class="connectlink">Komal Verma</a>
+		<a class="connectlink">Gaurav Kumar</a>
+		<a class="connectlink">Ashish Kumar</a>
+	</div>
+	<div id="contact">
+		<a class="btnfamily" onclick="getResponseHTMLCode('contact')">Contact</a>
+		<div>
+			<p>In Front Of Police Station, Tarun India Institute Madhepura, BIHAR, INDIA 852113</p>
+			<p>7992467543</p>
+		</div>	
+	</div>	
+</div>
+<div id="credit"><h3>Created By TrideepShivam</h3></div>
+</body>
+</html>

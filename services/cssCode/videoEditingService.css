@@ -1,0 +1,35 @@
+@keyframes settingRotate{
+	0%{transform:rotate(0deg);}
+	100%{transform:rotate(360deg);}
+}
+#advertisementContainer{
+	background-color:white;
+}
+#invitationContainer{
+	background-image:linear-gradient(45deg,dodgerblue,rgb(200,200,195));
+}
+#educationContainer{
+	background-image:linear-gradient(45deg,cornflowerblue,rgb(200,200,195));
+}
+#contractContainer{
+	background-image:url('../../pictures/priceBG.png');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+#contractText{
+	background-image:linear-gradient(green,rgba(15,15,15,.8));
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	padding:10% 5%;
+	margin:5%;
+	position:relative;
+	color:white;
+}
+@media screen and (max-width:800px){
+	#rotatePng{display:none;}
+	#contactForm .txt{width:90%;}
+	#contactFormBtnContainer .btnfamily{font-size:10px;}
+}

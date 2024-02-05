@@ -1,0 +1,156 @@
+#serviceDetail{
+	width:100%;
+	position:relative;
+	height:auto;
+}
+#details{
+	font-size:25px;
+	width:100%;
+	height:100%;
+	position:absolute;
+	color:white;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	line-height:10px;
+	background:rgba(0,0,0,.8);
+	bottom:0%;
+	left:0%;
+}
+#details h1{
+	color:rgb(18,250,62);
+	text-shadow:0 0 20px rgb(18,250,62);
+}
+
+#serviceDetail video{
+	height:auto;
+	width:100%;
+}
+
+
+.catagoryContainer{
+	position:relative;
+	margin:0;
+	width:100%;
+	height:auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	overflow:hidden;
+	transition: .5s linear;
+}
+.catagoryDetails{
+	margin:4% 0% 4% 4%;
+	font-size:18px;
+}
+.backPic{
+	margin:5%;
+	width:auto;
+	height:auto;
+}
+.catagoryDetails .uLine{
+	width:90%;
+	height:2px;
+	background:rgb(18,250,62);
+	margin-bottom:20px;
+}
+.catagoryDetails h1{
+	margin-bottom:5px;
+	font-size:50px;
+}
+
+
+
+.priceContainer{
+	background-image:url('../../pictures/priceBG.png');
+	background-repeat:no-repeat;
+	background-size:cover;
+	width:100%;
+	height:auto;
+	margin:0;
+	padding:3% 0%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+	transition:5s linear;
+}
+.priceContainer .priceHead{
+	color:rgb(18,250,62);
+	flex-basis:100%;
+	text-align:center;
+	font-size:60px;
+	text-shadow:0 3px 10px black;
+}
+.price{
+	background:rgba(0,0,60,.8);
+	width:250px;
+	text-align:center;
+	color:white;
+	margin:5%;
+	cursor:hand;
+	box-shadow:0 5px 10px black;
+	padding:0 2% 5% 2%;
+	border:2px solid rgb(18,250,62);
+	transition:.5s;
+}
+.price:hover{
+	transform:scale(1.05);
+	box-shadow:0 0 15px black;
+}
+.price h1,#demoDate{
+	padding:3% 0%;
+	color:rgb(70,0,255);
+	background:rgb(18,250,62);
+	box-shadow:0px 0px 10px rgba(18,250,62,.9),0px 0px 50px rgba(18,250,62,.8);
+	font-size:60px;
+	margin:0;
+}
+/* contract div style */
+#contractContainer{
+	background-image:url('../../pictures/priceBG.png');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+#contractText{
+	background-image:linear-gradient(green,rgba(15,15,15,.8));
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	padding:10% 5%;
+	margin:5%;
+	position:relative;
+	color:white;
+}
+
+
+.tik{color:rgb(18,250,62);}
+.cross{color:tomato;}
+.focus{color:aqua;}
+.tc:hover .TnC{height:150px;}
+.TnC{
+	padding:0% 5%;
+	color:black;
+	height:0px;
+	width:250px;
+	position:absolute;
+	text-align:left;
+	background-color:silver;
+	overflow:auto;
+	box-shadow:0 0 10px black;
+	transition:height .2s;
+}
+@media screen and (max-width:800px){
+	.catagoryContainer{flex-direction:column;}
+	.backpic{margin:0;width:100%;}
+	.catagoryDetails h1{font-size:40px;}
+}
+@media screen and (max-width:600px){
+	#details, .price, .catagoryDetails{font-size:15px;}
+	.priceContainer .priceHead{font-size:40px;margin:8%;}
+	#details p{margin:7;}
+}

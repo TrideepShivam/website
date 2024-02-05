@@ -1,0 +1,115 @@
+		#credit a{text-decoration:none;color:rgb(18,250,62);}
+		hr{width:100%;}
+		#introPicContainer{
+			height:100%;
+			width:100%;
+			background-image:url('../pictures/bad4.png');
+			background-color:rgb(200,250,250);
+			background-position:top right;
+			background-repeat:no-repeat;
+			overflow:hidden;
+		}
+		#starterContent{
+			height:auto;
+			width:45%;
+			padding:10%;
+			float:left;
+			font-size:20px;
+		}
+		#formContainer{
+			display:flex;
+			flex-wrap:wrap;
+			justify-content:space-between;
+			align-items:center;
+			height:auto;
+			width:100%;
+			background-image:url('../pictures/formBack2.jpg');
+			background-size:cover;
+		}
+		.form{
+			width:50%;
+			display:flex;
+			flex-direction:column;
+			justify-content:center;
+			align-items:center;
+			background:rgba(0,0,0,.9);
+			box-shadow:0 0 10px rgba(0,0,0,.9);
+			padding:2% 0%;
+			animation:anim1 5s;
+			animation-iteration-count:1;
+		}
+		h1{color:rgb(18,250,62);margin:0;}
+		#details{
+			width:50%;
+			height:100%;
+			display:flex;
+			flex-direction:column;
+			justify-content:center;
+			align-items:center;
+		}
+		.card{
+			width:280px;
+			height:auto;
+			display:flex;
+			flex-direction:column;
+			padding:20px;
+			background:rgba(0,0,0,.9);
+			color:white;
+			margin:10px;
+		}
+		.txt{margin:1%;border:1px solid silver;}
+		@keyframes anim1{
+			0%{transform:translatey(0px);}
+			50%{transform:translatey(-110px);}
+			100%{transform:translatey(0px);}
+		}
+		.btndemo{text-decoration:none;margin:0;}
+		.connect{text-align:center;}
+		.focus{color:aqua;}
+		.tc{text-align:center;width:100%;}
+		.tc:hover .TnC{height:200px;}
+		.TnC{
+			padding:0% 2%;
+			color:black;
+			height:0px;
+			width:300px;
+			position:absolute;
+			background-color:silver;
+			overflow:auto;
+			box-shadow:0 0 10px black;
+			transition:height .2s;
+		}
+		#btnContainer{
+			display:flex;
+			justify-content:left;
+			align-items:flex-start;
+			width:auto;
+			height:auto;
+		}
+		#register,#help{
+			text-decoration:none;
+			padding:15px 30px;
+			margin:2% 2% 0% 0%;
+			font-size:20px;
+			background:seagreen;
+			cursor:hand;
+			color:white;
+			transition:.2s;
+			border:none;
+		}
+		#help{color:green;background:white;}
+		#register:hover,#help:hover{background:green;color:white;}
+		#paymentMode{color:white;width:40%;padding:3%;}		
+		
+		@media screen and (max-width:800px){
+			#introPicContainer{
+				background-size:150%;
+				background-position:center;
+			}
+			.txt{width:90%;}
+			#starterContent{width:80%;font-size:15px;height:100%;background:rgba(0,0,0,.8);color:white;}
+			#register,#help{font-size:15px;}
+			#formContainer{justify-content:center;}
+			.form{width:90%;}
+			#paymentMode{width:70%;}
+		}
